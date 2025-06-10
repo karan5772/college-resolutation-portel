@@ -7,7 +7,11 @@ const userSchema = new mongoose.Schema(
       required: true,
       unique: true,
       trim: true,
-    }, // Student ID (used for login)
+    },
+    name: {
+      type: String,
+      required: true,
+    },
     password: {
       type: String,
       required: true,

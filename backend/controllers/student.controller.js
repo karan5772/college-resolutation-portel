@@ -63,7 +63,7 @@ export const getAllProblems = async (req, res) => {
   }
 
   try {
-    const problems = await Problem.findAll({
+    const problems = await Problem.find({
       createdBy: userId,
     });
     res.status(200).json({

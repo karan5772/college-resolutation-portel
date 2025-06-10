@@ -3,13 +3,14 @@ import bcrypt from "bcryptjs";
 import User from "../models/user.models.js";
 
 export const create = async (req, res) => {
-  const { sid, password, role } = req.body;
+  const { sid, password, name, role } = req.body;
 
   try {
     const hpass = await bcrypt.hash(password, 10);
     const user = await User.create({
       sid,
       password: hpass,
+      name,
       role,
     });
 

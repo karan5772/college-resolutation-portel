@@ -16,10 +16,20 @@ const problemSchema = new mongoose.Schema(
         required: false,
       },
     ], // e.g., ['hostel', 'exam', 'canteen']
+    status: {
+      type: String,
+      enum: ["PENDING", "INPROGRESS", "RESOLVED"],
+      default: "PENDING",
+      required: true,
+    },
     createdBy: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
       required: true,
+    },
+    response: {
+      type: String,
+      required: false,
     },
   },
   {
