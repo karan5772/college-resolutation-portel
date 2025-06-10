@@ -81,7 +81,6 @@ export const getAllProblems = async (req, res) => {
 
 export const getProblemById = async (req, res) => {
   const { id } = req.params;
-  console.log(id);
 
   if (!id) {
     return res.status(400).json({
