@@ -73,6 +73,7 @@ export const login = async (req, res) => {
       token,
       user: {
         sid: user.sid,
+        name: user.name,
         role: user.role,
       },
     });
@@ -144,6 +145,21 @@ export const changePassword = async (req, res) => {
     console.error("Error Changing Password:", error);
     res.status(500).json({
       error: "Error Changing Password",
+    });
+  }
+};
+
+export const check = async (req, res) => {
+  try {
+    res.status(201).json({
+      success: true,
+      message: "User Checked Sucessfully",
+      user: req.user,
+    });
+  } catch (error) {
+    console.error("Error checking user:", error);
+    res.status(500).json({
+      error: "Error checking user",
     });
   }
 };

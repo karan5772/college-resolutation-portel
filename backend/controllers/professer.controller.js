@@ -63,7 +63,7 @@ export const getProblemById = async (req, res) => {
 
 export const respondToProblemById = async (req, res) => {
   const problemId = req.params.id;
-  const { response, status } = req.body;
+  const { response, status } = req.body.data;
 
   if (!problemId || !response) {
     return res.status(400).json({

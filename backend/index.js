@@ -5,8 +5,16 @@ import db from "./utils/db.utils.js";
 import authRoute from "./routes/auth.routs.js";
 import studentRouter from "./routes/student.routs.js";
 import professorRouter from "./routes/professer.routs.js";
+import cors from "cors";
 
 const app = express();
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "http://localhost:3000"],
+    credentials: true,
+  })
+);
+
 dotenv.config();
 
 app.use(express.json());

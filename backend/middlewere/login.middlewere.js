@@ -25,7 +25,7 @@ export const authMiddleware = async (req, res, next) => {
 
     const user = await User.findOne({
       sid: decoded.sid,
-    });
+    }).select("sid role name");
 
     if (!user) {
       return res.status(404).json({
