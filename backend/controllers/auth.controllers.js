@@ -18,7 +18,12 @@ export const create = async (req, res) => {
       succees: true,
       message: "User created",
     });
-  } catch (error) {}
+  } catch (error) {
+    console.error("Error creating user:", error);
+    res.status(500).json({
+      error: "Error creating user",
+    });
+  }
 };
 
 export const login = async (req, res) => {
