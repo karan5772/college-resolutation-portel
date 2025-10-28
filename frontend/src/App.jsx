@@ -6,7 +6,6 @@ import HomePage from "./pages/HomePage";
 import { Loader } from "lucide-react";
 import ProfessorDashboard from "./pages/ProfessorDashboard";
 import StudentDashboard from "./pages/StudentDashboard";
-import New from "./pages/New";
 
 const App = () => {
   const { authUser, check, isCheckingAuth } = useAuthStore();

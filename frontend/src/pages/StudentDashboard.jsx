@@ -17,8 +17,6 @@ import {
   Star,
   Archive,
   Trash2,
-  Settings,
-  User,
   Flag,
   Plus,
   User2,
@@ -207,8 +205,16 @@ const StudentDashboard = () => {
             <Menu className="w-5 h-5 text-gray-600" />
           </button>
           <div className="flex items-center space-x-2">
-            <MessageSquare className="w-6 h-6 text-indigo-600" />
-            <h1 className="text-lg font-medium text-gray-900">My Problems</h1>
+            <div className="h-10 w-10 mr-2 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+              <img
+                className="rounded-2xl"
+                src="clglogo.webp"
+                alt="BKBIET Logo"
+              />
+            </div>
+            <h1 className="text-xl font-medium text-gray-900">
+              Grevience Portel
+            </h1>
           </div>
         </div>
 
@@ -268,7 +274,7 @@ const StudentDashboard = () => {
             <div className="h-10 w-10 mr-2 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
               <img
                 className="rounded-2xl"
-                src="https://www.educatly.com/_next/image?url=https%3A%2F%2Fapi.educatly.com%2F%2Frails%2Factive_storage%2Fblobs%2FeyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL0FHQ0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ%3D%3D--53e28a301f7944fce002eee3c82af751be769df0%2Fb_k_birla_institute_of_engineering_%26_technology_pilani_profile&w=1080&q=75"
+                src="clglogo.webp"
                 alt="BKBIET Logo"
               />
             </div>

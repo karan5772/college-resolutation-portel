@@ -67,10 +67,7 @@ const LoginPage = () => {
             <div className="text-center mb-8">
               <div className="mb-4">
                 <div className="w-16 h-16 bg-linear-to-br from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <img
-                    src="https://www.educatly.com/_next/image?url=https%3A%2F%2Fapi.educatly.com%2F%2Frails%2Factive_storage%2Fblobs%2FeyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL0FHQ0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ%3D%3D--53e28a301f7944fce002eee3c82af751be769df0%2Fb_k_birla_institute_of_engineering_%26_technology_pilani_profile&w=1080&q=75"
-                    alt="BKBIET Logo"
-                  />
+                  <img src="clglogo.webp" alt="BKBIET Logo" />
                 </div>
               </div>
               <h1 className="text-3xl font-bold bg-linear-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">
@@ -202,7 +199,7 @@ const LoginPage = () => {
           <div className="text-center bg-gray-50  rounded-2xl m-9 mt-15 p-4 items-center  text-gray-700 ">
             <img
               className="rounded-xl  mx-auto w-17 h-17"
-              src="https://www.educatly.com/_next/image?url=https%3A%2F%2Fapi.educatly.com%2F%2Frails%2Factive_storage%2Fblobs%2FeyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL0FHQ0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ%3D%3D--53e28a301f7944fce002eee3c82af751be769df0%2Fb_k_birla_institute_of_engineering_%26_technology_pilani_profile&w=1080&q=75"
+              src="clglogo.webp"
               alt="BKBIET Logo"
             />
             <h2 className="text-4xl font-bold mt-3">

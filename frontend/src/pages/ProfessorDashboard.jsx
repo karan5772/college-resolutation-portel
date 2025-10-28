@@ -11,22 +11,15 @@ import {
   AlertTriangle,
   CheckCircle,
   MessageSquare,
-  Calendar,
   Eye,
-  Send,
   X,
   Inbox,
   Star,
   Archive,
   Trash2,
   Settings,
-  User,
-  Mail,
   Flag,
   Plus,
-  MoreHorizontal,
-  ArrowLeft,
-  ChevronDown,
   User2,
 } from "lucide-react";
 import toast from "react-hot-toast";
@@ -228,17 +221,11 @@ const ProfessorDashboard = () => {
       {/* Mobile Header */}
       <div className="lg:hidden flex items-center justify-between px-4 py-3 border-b border-gray-200 bg-white">
         <div className="flex items-center space-x-4">
-          <button
-            onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
-            className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-          >
-            <Menu className="w-5 h-5 text-gray-600" />
-          </button>
           <div className="flex items-center space-x-2">
             <div className="h-10 w-10 mr-2 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
               <img
                 className="rounded-2xl"
-                src="https://www.educatly.com/_next/image?url=https%3A%2F%2Fapi.educatly.com%2F%2Frails%2Factive_storage%2Fblobs%2FeyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL0FHQ0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ%3D%3D--53e28a301f7944fce002eee3c82af751be769df0%2Fb_k_birla_institute_of_engineering_%26_technology_pilani_profile&w=1080&q=75"
+                src="clglogo.webp"
                 alt="BKBIET Logo"
               />
             </div>
@@ -293,7 +280,7 @@ const ProfessorDashboard = () => {
             <div className="h-10 w-10 mr-2 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
               <img
                 className="rounded-2xl"
-                src="https://www.educatly.com/_next/image?url=https%3A%2F%2Fapi.educatly.com%2F%2Frails%2Factive_storage%2Fblobs%2FeyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL0FHQ0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ%3D%3D--53e28a301f7944fce002eee3c82af751be769df0%2Fb_k_birla_institute_of_engineering_%26_technology_pilani_profile&w=1080&q=75"
+                src="clglogo.webp"
                 alt="BKBIET Logo"
               />
             </div>
