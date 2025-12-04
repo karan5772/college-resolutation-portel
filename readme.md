@@ -79,53 +79,75 @@ Follow these steps to set up the project locally.
 
 ### 1. Clone the Repository
 
-\`\`\`bash
+```
 git clone https://github.com/karan5772/college-resolution-portal.git
 cd college-resolution-portal
-\`\`\`
+```
 
 ### 2. Backend Setup
 
 Navigate to the backend folder and install dependencies.
 
-\`\`\`bash
+```bash
 cd backend
 npm install
-\`\`\`
+```
 
 Create a \`.env\` file in the \`backend\` directory:
-\`\`\`env
+```
 PORT=
 MONGO_URI=
 JWT_SECRET=
 NODE_ENV=development
-\`\`\`
+```
 
 Start the server:
-\`\`\`bash
+```
 npm start
 
-\`\`\`
+```
 
 ### 3. Frontend Setup
 
 Open a new terminal, navigate to the frontend folder, and install dependencies.
 
-\`\`\`bash
+```
 cd frontend
 npm install
-\`\`\`
+```
 
 Create a \`.env\` file in the \`frontend\` directory:
-\`\`\`env
+```env
 VITE_API_URL=
-\`\`\`
+```
 
 Start the development server:
-\`\`\`bash
+```
 npm run dev
 
-\`\`\`
+```
+
+---
+
+## 📂 Project Structure
+
+```bash
+college-resolution-portal/
+├── 📂 backend/ # Express API
+│ ├── 📂 controllers/ # Logic for Auth, Professors, Students
+│ ├── 📂 middlewere/ # Auth & Role verification
+│ ├── 📂 models/ # Mongoose Schemas (User, Problem)
+│ ├── 📂 routes/ # API Routes
+│ └── 📂 utils/ # DB Connection
+│
+└── 📂 frontend/ # React Application
+├── 📂 src/
+│ ├── 📂 components/ # Reusable UI components (Modals, etc.)
+│ ├── 📂 lib/ # Axios configuration
+│ ├── 📂 pages/ # Dashboards & Login pages
+│ └── 📂 store/ # Zustand state management
+└── ...
+```
 
 ---
 
