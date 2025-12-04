@@ -74,13 +74,13 @@ Follow these steps to set up the project locally.
 
 ### Prerequisites
 
-- Node.js (v16+)
+- Node.js (v20+)
 - MongoDB (Local or Atlas URL)
 
 ### 1. Clone the Repository
 
 \`\`\`bash
-git clone https://github.com/your-username/college-resolution-portal.git
+git clone https://github.com/karan5772/college-resolution-portal.git
 cd college-resolution-portal
 \`\`\`
 
@@ -95,17 +95,15 @@ npm install
 
 Create a \`.env\` file in the \`backend\` directory:
 \`\`\`env
-PORT=4001
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_super_secret_key
+PORT=
+MONGO_URI=
+JWT_SECRET=
 NODE_ENV=development
 \`\`\`
 
 Start the server:
 \`\`\`bash
 npm start
-
-# Server will run on http://localhost:4001
 
 \`\`\`
 
@@ -120,37 +118,13 @@ npm install
 
 Create a \`.env\` file in the \`frontend\` directory:
 \`\`\`env
-VITE_API_URL=http://localhost:4001/api/v1
+VITE_API_URL=
 \`\`\`
 
 Start the development server:
 \`\`\`bash
 npm run dev
 
-# App will run on http://localhost:5173
-
-\`\`\`
-
----
-
-## 📂 Project Structure
-
-\`\`\`bash
-college-resolution-portal/
-├── 📂 backend/ # Express API
-│ ├── 📂 controllers/ # Logic for Auth, Professors, Students
-│ ├── 📂 middlewere/ # Auth & Role verification
-│ ├── 📂 models/ # Mongoose Schemas (User, Problem)
-│ ├── 📂 routes/ # API Routes
-│ └── 📂 utils/ # DB Connection
-│
-└── 📂 frontend/ # React Application
-├── 📂 src/
-│ ├── 📂 components/ # Reusable UI components (Modals, etc.)
-│ ├── 📂 lib/ # Axios configuration
-│ ├── 📂 pages/ # Dashboards & Login pages
-│ └── 📂 store/ # Zustand state management
-└── ...
 \`\`\`
 
 ---
@@ -173,15 +147,6 @@ college-resolution-portal/
 - \`GET /api/v1/professor/all-problems\` - Fetch all grievances
 - \`GET /api/v1/professor/problem/:id\` - Get specific problem details
 - \`PUT /api/v1/professor/respond/:id\` - Respond to/Resolve a problem
-
----
-
-## 📸 Screenshots
-
-<!-- You can add screenshots here later -->
-<div align="center">
-  <img src="https://via.placeholder.com/800x400?text=Dashboard+Preview" alt="Dashboard Screenshot" />
-</div>
 
 ---
 
